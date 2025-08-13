@@ -1,5 +1,6 @@
 # 2-ODE_FORTRAN95
-#FORTRAN #OED #Cálculo
+#<FORTRAN> <#OED #Cálculo>
+
 Scrip of a FORTRAN95 program for solving homogeneous linear ordinary differential equations of the 2nd order.
 
 Before use, the code must be compiled, which can easily be done by an IDE that supports the language from source. 
