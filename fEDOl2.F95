@@ -21,15 +21,25 @@ PROGRAM EDOl2
 		x1=(-b+sqrt(d))/2*a
 		x2=(-b-sqrt(d))/2*a
 		WRITE(*,*) "y(x)=C1*exp(",x1,"*x)+C2*exp(",x2,"*x)"
+		WRITE(*,*) "y'(x)=C1*exp",x1,"*x)*",x1,")+C2*(exp(",x2,"*x)*",x2,")"
+		WRITE(*,*) "y''(x)=C1*(exp(",x1,"*x)*",x1**2,")+C2(exp(",x2,"*x)*",x2**2,")"
 	END IF
 	IF(d==0) then
 		x=-b/2*a
 		WRITE(*,*) "y(x)=exp(",real(x),"*x)*(C1+x*C2)"
+		WRITE(*,*) "y'(x)=exp(",real(x),"*x)*",real(x),"*(C1+x*C2)+exp(",real(x),"*x)*C2"
+		WRITE(*,*) "y''(x)=exp(",real(x),"*x)*",real(x)**2,"*(C1+x*C2)+exp(",real(x),"*x)*",real(x),"*C2+exp(",real(x),"*x)*",real(x),"*C&
+		&2"
 	END IF
 	IF(d<0) THEN
 		dc=cmplx(d,0)
 		x=(-b+sqrt(dc)/2*a)
 		WRITE(*,*) "y(x)=exp(x*",real(x),")*(C1*cos(",aimag(x),"*x)+C2*sin(",aimag(x),"*x))"
+		WRITE(*,*) "y'(x)=exp(x*",real(x),")*",real(x),"*(C1*cos(",aimag(x),"*x)+C2*sin(",aimag(x),"*x))+exp(x*",real(x),")*(C2*(cos(",ai&
+		&mag(x),"*x)*",aimag(x),")-C1*(sin(",aimag(x),"*x)*",aimag(x),"))"
+		WRITE(*,*) "y''(x)=exp(x*",real(x),")*",real(x)**2,"(C1*cos(",aimag(x),"*x)+C2*sin(",aimag(x),"*x))+exp(x*",real(x),")*",real(x),&
+		&"*(C2*(cos(",aimag(x),"*x)*",aimag(x),")-C1*(sin(",aimag(x),"*x)*",aimag(x),"))-exp(x*",real(x),")*(C2*(sin(",aimag(x),"*x)*",ai&
+		&mag(x)**2,")+C1*(cos(",aimag(x),"*x)*",aimag(x)**2,")))"
 	END IF
 	PRINT*, "Where C1 and C2 are integration constants"
 END PROGRAM EDOl2
