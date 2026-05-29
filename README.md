@@ -8,6 +8,8 @@ Compilers such as gcc, lfortran and gfortran can also be used on Linux systems, 
 gfortran fEDOl2.F95 -o fEDOl2 #For compiling (just make it on the first time of use)
 ./fEDOl2 #For run
 ```
+![](fEDOl2-1.png)
+
 # Contribuition
 Help me to buy a coffee:
 
