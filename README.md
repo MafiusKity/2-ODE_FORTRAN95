@@ -15,6 +15,6 @@ Help me to buy a coffee:
 
 Monero:
 ```
-86khvLXgJGYL4wSqbwwqGCXQJv8UftPYnAA7FiTws1xu8qUfeuABVQ5KXx1QoDwSHhaUvCHaDjx9xPATCNurvEHM2yTSyME
+
 ```
 
