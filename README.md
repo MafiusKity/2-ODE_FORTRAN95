@@ -15,6 +15,9 @@ Help me to buy a coffee:
 
 Monero:
 ```
-
+8AxQkGSPNzGFYrXYWxxwZ19c3NKDzTF2HXFcRbBRHxbFQZvmVwt7AvBLGbNADGnjJBBxHF2TyMDpbLUvcSCcugceAAtv33G
 ```
-
+USDT:
+```
+lq1qqt35967lm6lyzqh426tzyum5ykhkk7c2gknxrmwmrc4ktalpj7my99suaa7ljqdkm4kaktc30cw6wlhfjtpwqv9fpah26274c
+```
